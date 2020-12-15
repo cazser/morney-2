@@ -124,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "morney-angular"
+  "defaultProject": "morney-angular",
+  "cli": {
+    "analytics": "fc495786-ad2b-434c-9cff-bdf3a71ae66e"
+  }
 }

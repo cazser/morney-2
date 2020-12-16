@@ -2,6 +2,10 @@
 *::after, *::before{box-sizing: boder-box;}
 body{
     line-height: 1.5;
+    font-size: 16px;
+}
+button, input{
+    font-size: inherit;
 }
 a{
     text-decoration: none;

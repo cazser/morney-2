@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-label-icon',
+  selector: 'label-icon',
   templateUrl: '../assets/label.svg',
-  styleUrls: ['./label-icon.component.css']
+  styleUrls: ['./label-icon.component.css', '../commonStyle/svg.css']
 })
 export class LabelIconComponent implements OnInit {
 

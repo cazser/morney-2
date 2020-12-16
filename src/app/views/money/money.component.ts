@@ -3,8 +3,7 @@ import { NavComponent } from '../../components/nav/nav.component';
 @Component({
   selector: 'app-money',
   templateUrl: './money.component.html',
-  styleUrls: ['./money.component.css',
-              '../../commonStyle/NavWrapper.css']
+  styleUrls: ['./money.component.css']
 })
 export class MoneyComponent implements OnInit {
 

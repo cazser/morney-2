@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { NavComponent } from '../nav/nav.component';
+import { NavComponent } from '../../components/nav/nav.component';
 
 @Component({
   selector: 'app-statistics',
   templateUrl: './statistics.component.html',
-  styleUrls: ['./statistics.component.css','../commonStyle/NavWrapper.css']
+  styleUrls: ['./statistics.component.css','../../commonStyle/NavWrapper.css']
 })
 export class StatisticsComponent implements OnInit {
 

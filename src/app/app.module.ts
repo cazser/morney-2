@@ -3,11 +3,11 @@ import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import { NavComponent } from './nav/nav.component';
-import { MoneyComponent } from './money/money.component';
-import { LabelComponent } from './label/label.component';
-import { StatisticsComponent } from './statistics/statistics.component';
+import { PageNotFoundComponent } from './views/page-not-found/page-not-found.component';
+import { NavComponent } from './components/nav/nav.component';
+import { MoneyComponent } from './views/money/money.component';
+import { LabelComponent } from './views/label/label.component';
+import { StatisticsComponent } from './views/statistics/statistics.component';
 
 @NgModule({
   declarations: [

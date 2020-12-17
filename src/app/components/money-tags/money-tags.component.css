@@ -3,11 +3,14 @@
 .tags{
     padding: 16px;
     font-size: 14px;
-    min-height: 25vh;
+    height: 25vh;
+    overflow-y: scroll;
 }
 
 .current{
     display: flex;
+    flex-wrap: wrap;
+    overflow: auto;
 }
 
 li{

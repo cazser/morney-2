@@ -5,9 +5,9 @@
             <li *ngFor="let tag of tags; let i=index" (click)="tagOnClick($event)">{{tag}}</li>
         </ul>
         <div class="new">
-            <button>新增标签</button>
+            <button (click)="newButton()">新增标签</button>
         </div>
         <div class="new">
-            <button>删除所选标签</button>
+            <button (click)="deleteSelectedTags()">删除所选标签</button>
         </div>    
 </div>

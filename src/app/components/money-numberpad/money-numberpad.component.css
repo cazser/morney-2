@@ -1,0 +1,61 @@
+.output{
+    font-size: 36px;
+    font-family: Consolas, monospace;
+    padding: 9px 16px;
+}
+
+.buttons >button:nth-child(1){
+    background: rgba(210,210,210, 0.1);
+}
+
+.buttons >button:nth-child(2),
+.buttons >button:nth-child(5){
+    background: rgba(180,180,180, 0.25);
+}
+
+.buttons >button:nth-child(3),
+.buttons >button:nth-child(6),
+.buttons >button:nth-child(9){
+    background: rgba(150,150,150, 0.4);
+}
+
+.buttons >button:nth-child(4),
+.buttons >button:nth-child(7),
+.buttons >button:nth-child(10){
+    background: rgba(120,120,120, 0.55);
+}
+
+.buttons >button:nth-child(8),
+.buttons >button:nth-child(11),
+.buttons >button:nth-child(13){
+    background: rgba(90,90,90, 0.4);
+}
+
+
+.buttons >button:nth-child(14){
+    background: rgba(60,60,60, 0.25);
+}
+
+buttons >button:nth-child(12){
+    background: rgba(30,30,30, 0.1);
+}
+.buttons > button{
+    width: 25%;
+    height: 64px;
+    float: left;
+    border:none;
+}
+
+.buttons > .ok{
+    height: 128px;
+    float: right;
+}
+
+.buttons > .zero{
+    width: 50%;
+}
+
+.numberpad{
+    float: bottom;
+    flex-grow: 1;
+}

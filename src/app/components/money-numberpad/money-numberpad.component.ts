@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'money-numberpad',
   templateUrl: './money-numberpad.component.html',
-  styleUrls: ['./money-numberpad.component.css']
+  styleUrls: ['./money-numberpad.component.css','../commonStyle/reset.css']
 })
 export class MoneyNumberpadComponent implements OnInit {
 

@@ -12,6 +12,7 @@
     padding:0;
 }
 .content{
+    height: 100vh;
     flex-grow: 1;
     overflow: auto;
 }

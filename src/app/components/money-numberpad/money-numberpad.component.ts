@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { element } from 'protractor';
-
+import { Output, EventEmitter } from '@angular/core';
 @Component({
   selector: 'money-numberpad',
   templateUrl: './money-numberpad.component.html',

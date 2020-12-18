@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl } from '@angular/forms';
+import { Output, EventEmitter } from '@angular/core';
 @Component({
   selector: 'money-note',
   templateUrl: './money-note.component.html',

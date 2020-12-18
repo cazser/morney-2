@@ -47,4 +47,7 @@ export class MoneyComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  ngOnDestroy(){
+    this.recordListService.saveToLocal();
+  }
 }

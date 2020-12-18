@@ -11,7 +11,7 @@ export class MoneyTagsComponent implements OnInit {
   }
   @Output() private outer=new EventEmitter<string[]>();
   selectedTags=new Set();
-  tags=['衣','食','住','行']
+  tags= JSON.parse(localStorage.getItem("tags") as string)||['衣','食','住','行']
   
   constructor() { }
   
@@ -45,6 +45,7 @@ export class MoneyTagsComponent implements OnInit {
       }else{
         this.tags.push(tag);
       }
+      localStorage.setItem("tags", JSON.stringify(this.tags))
     }
   }
   
@@ -57,6 +58,8 @@ export class MoneyTagsComponent implements OnInit {
     }
     this.selectedTags = new Set();
     this.tags = newTags;
+    localStorage.setItem("tags", JSON.stringify(this.tags))
+
   }
 
 }

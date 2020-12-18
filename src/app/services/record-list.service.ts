@@ -4,6 +4,7 @@ interface recordType{
   tags:string[]|null,
   type:string|null,
   amount:string
+  date:Date
 }
 
 @Injectable({
@@ -17,6 +18,7 @@ export class RecordListService {
   amount: string ="";
   key = "recordList";
 
+
   addToRecordList(record: recordType){
     this.recordList.push(record);
   }
@@ -26,6 +28,5 @@ export class RecordListService {
 
   saveToLocal(){
     localStorage.setItem(this.key, JSON.stringify(this.recordList));
-    window.alert("here")
   }
 }

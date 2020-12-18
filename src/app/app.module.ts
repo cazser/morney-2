@@ -17,7 +17,6 @@ import { MoneyNoteComponent } from './components/money-note/money-note.component
 import { MoneyTypeComponent } from './components/money-type/money-type.component';
 import { MoneyNumberpadComponent } from './components/money-numberpad/money-numberpad.component';
 
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,7 +31,7 @@ import { MoneyNumberpadComponent } from './components/money-numberpad/money-numb
     MoneyTagsComponent,
     MoneyNoteComponent,
     MoneyTypeComponent,
-    MoneyNumberpadComponent
+    MoneyNumberpadComponent,
   ],
   imports: [
     BrowserModule,

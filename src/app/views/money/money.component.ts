@@ -20,7 +20,8 @@ export class MoneyComponent implements OnInit {
       note: this.defaultNote,
       tags: this.defaultTags,
       type: this.defaultType,
-      amount: this.defaultAmount
+      amount: this.defaultAmount,
+      date: new Date()
     })
   }
   receiveType(type:string){
@@ -39,7 +40,6 @@ export class MoneyComponent implements OnInit {
     this.defaultAmount = amount;
     console.log(this.defaultAmount);
     this.store();
-    console.log(this.recordListService.recordList)
   }
 
 

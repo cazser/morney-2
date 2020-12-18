@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit ,Input,Output,EventEmitter} from '@angular/core';
 
 @Component({
   selector: 'money-type',
@@ -7,11 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MoneyTypeComponent implements OnInit {
   selectedType="-"
+  @Output() private outer=new EventEmitter<string>();
+
   constructor() { }
+
+  sendParent(){
+    // alert('zhixing');
+    this.outer.emit(this.selectedType)
+  }
 
   ngOnInit(): void {
   }
   onClick(target: "+" | "-"){
     this.selectedType = target
+    this.sendParent();
   }
 }

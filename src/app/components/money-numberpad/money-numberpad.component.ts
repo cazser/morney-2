@@ -8,7 +8,15 @@ import { Output, EventEmitter } from '@angular/core';
 })
 export class MoneyNumberpadComponent implements OnInit {
   amount=""
+  @Output() private outer=new EventEmitter<string>();
   constructor() { }
+
+  sendParent(){
+    // alert('zhixing');
+    this.outer.emit(this.amount)
+  }
+
+
   buttonOnClick(event: MouseEvent){
     if(event.target){
       const target = event.target as Element;
@@ -21,7 +29,8 @@ export class MoneyNumberpadComponent implements OnInit {
       }else if(buttonType === '清空'){
         this.amount="";
       }else if(buttonType==="√"){
-
+        this.sendParent()
+        this.amount="";
       }else{
         if(buttonType==="."){
           if(this.amount.indexOf('.')>=0 ||

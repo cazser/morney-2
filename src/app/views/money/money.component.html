@@ -1,8 +1,8 @@
 <app-frame>
     <div class="wrapper">
-    <money-numberpad></money-numberpad>
-    <money-type></money-type>
-    <money-note></money-note>
-    <money-tags></money-tags>
+    <money-numberpad (outer)="receiveAmount($event)"></money-numberpad>
+    <money-type (outer)="receiveType($event)"></money-type>
+    <money-note (outer)="receiveNote($event)"></money-note>
+    <money-tags (outer)="receiveTags($event)"></money-tags>
     </div>
 </app-frame>

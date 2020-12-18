@@ -8,10 +8,17 @@ import { Output, EventEmitter } from '@angular/core';
 })
 export class MoneyNoteComponent implements OnInit {
   note = new FormControl('');
+  @Output() private outer=new EventEmitter<string>();
   outputnote=''
+  
+  sendParent(){
+    // alert('zhixing');
+    this.outer.emit(this.outputnote)
+  }
   constructor() { }
   loseFocus(){
     this.outputnote = this.note.value;
+    this.sendParent();
   }
   ngOnInit(): void {
   }

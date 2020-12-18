@@ -1,3 +1,4 @@
+import { summaryFileName } from '@angular/compiler/src/aot/util';
 import { Component, OnInit } from '@angular/core';
 import { Output, EventEmitter } from '@angular/core';
 @Component({
@@ -8,12 +9,20 @@ import { Output, EventEmitter } from '@angular/core';
 export class MoneyTagsComponent implements OnInit {
   ngOnInit(): void {
   }
-
+  @Output() private outer=new EventEmitter<string[]>();
   selectedTags=new Set();
   tags=['衣','食','住','行']
   
   constructor() { }
   
+  sendParent(){
+    let submit: string[]=[]
+    this.selectedTags.forEach((tag)=>{
+      submit.push(tag as string);
+    })
+    this.outer.emit(submit);
+  }
+
   tagOnClick(event:MouseEvent){
     const target = event.target as Element;
     if(this.selectedTags.has(target.textContent)){
@@ -23,6 +32,7 @@ export class MoneyTagsComponent implements OnInit {
       this.selectedTags.add(target.textContent);
       target.classList.add("selected");
     }
+    this.sendParent();
   }
 
   newButton(){

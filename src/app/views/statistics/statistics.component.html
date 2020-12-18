@@ -1,6 +1,6 @@
 <app-frame>
-        <button>支出</button>
-        <button>收入</button>
+        <button (click)="onClick('-')"  [class.selected]="selectedType==='-'">支出</button>
+        <button (click)="onClick('+')" [class.selected]="selectedType==='+'">收入</button>
         <table>
                 <thead>
                         <th>
@@ -25,7 +25,7 @@
                         <span>{{record.note}}</span>
                         </td>
                         <td>
-                        <span>{{record.amount}}</span>
+                        <span>{{record.amount}}(￥)</span>
                         </td>
                         <td>
                         <span>{{record.date |  date:"yy/MM/dd"}}</span>

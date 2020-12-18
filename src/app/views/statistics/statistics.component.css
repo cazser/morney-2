@@ -1,14 +1,29 @@
 button{
     width: 50%;
     height: 64px;
+    background: white;
+    border:none;
 }
 table{
     border-collapse: collapse;
     border-spacing: 0;
     empty-cells: show;
+    width: 100%;
+    align-items: center;
     border: 1px solid #cbcbcb;
 }
 
 tr{
     width: 100%;
+}
+
+td{
+    min-width: 20%;
+    border: 1px solid green;
+}
+
+.selected{
+    box-shadow: 0 0 5px rgba(0,0,0,0.25);
+    background:#4e6ef2;
+    color: white;
 }

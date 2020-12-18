@@ -2,7 +2,28 @@
     font-size: 36px;
     font-family: Consolas, monospace;
     padding: 9px 16px;
+    min-height: 64px;
 }
+
+.buttons >button:hover {
+    background-color: #fff;
+    -moz-transition-timing-function: cubic-bezier(0.37, 0.74, 0.15, 1.65);
+    -o-transition-timing-function: cubic-bezier(0.37, 0.74, 0.15, 1.65);
+    -webkit-transition-timing-function: cubic-bezier(0.37, 0.74, 0.15, 1.65);
+    transition-timing-function: cubic-bezier(0.37, 0.74, 0.15, 1.65);
+  }
+  .buttons >button:hover .pus {
+    opacity: 1;
+    border: 1px solid #A8CFCB;
+    -moz-transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    -webkit-transform: scale(1.15);
+    transform: scale(1.15);
+    -moz-transition-timing-function: cubic-bezier(0.37, 0.74, 0.15, 1.65);
+    -o-transition-timing-function: cubic-bezier(0.37, 0.74, 0.15, 1.65);
+    -webkit-transition-timing-function: cubic-bezier(0.37, 0.74, 0.15, 1.65);
+    transition-timing-function: cubic-bezier(0.37, 0.74, 0.15, 1.65);
+  }
 
 .buttons >button:nth-child(1){
     background: rgba(210,210,210, 0.1);

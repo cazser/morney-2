@@ -6,12 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./money-type.component.css','../commonStyle/reset.css']
 })
 export class MoneyTypeComponent implements OnInit {
-  selected="-"
+  selectedType="-"
   constructor() { }
 
   ngOnInit(): void {
   }
   onClick(target: "+" | "-"){
-    this.selected = target
+    this.selectedType = target
   }
 }

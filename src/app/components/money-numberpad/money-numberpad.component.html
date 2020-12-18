@@ -1,20 +1,21 @@
 
 <div class="numberpad">
-    <div class="output">100</div>
+    <div class="output">{{amount}}</div>
     <div class="buttons clearfix">
-        <button>1</button>
-        <button>2</button>
-        <button>3</button>
-        <button>删除</button>
-        <button>4</button>
-        <button>5</button>
-        <button>6</button>
-        <button>清空</button>
-        <button>7</button>
-        <button>8</button>
-        <button>9</button>
-        <button class="ok">√</button>
-        <button class="zero">0</button>
-        <button>.</button>
+        <button (click)="buttonOnClick($event)"
+        ng-focus="count = count + 1">1</button>
+        <button (click)="buttonOnClick($event)">2</button>
+        <button (click)="buttonOnClick($event)">3</button>
+        <button (click)="buttonOnClick($event)">删除</button>
+        <button (click)="buttonOnClick($event)">4</button>
+        <button (click)="buttonOnClick($event)">5</button>
+        <button (click)="buttonOnClick($event)">6</button>
+        <button (click)="buttonOnClick($event)">清空</button>
+        <button (click)="buttonOnClick($event)">7</button>
+        <button (click)="buttonOnClick($event)">8</button>
+        <button (click)="buttonOnClick($event)">9</button>
+        <button class="ok" (click)="buttonOnClick($event)">√</button>
+        <button class="zero" (click)="buttonOnClick($event)">0</button>
+        <button (click)="buttonOnClick($event)">.</button>
     </div>
 </div>
